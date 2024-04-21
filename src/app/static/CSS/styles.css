@@ -6,9 +6,13 @@
 
 body{
     font-family: 'arial';
+    background-image: radial-gradient(#fff, #c7c7c7)
 }
 
 /*Header ------------------------------------------------------------------------------------------------------------*/
+img{
+    border-radius: 20px;
+}
 .header-inner-content{
     max-width: 1300px;
     margin-left: auto;
@@ -19,9 +23,14 @@ body{
     background-color: #2c2c2c;
     padding: 1rem;
     position: sticky;
+
+    margin-left: 5px;
+    margin-right: 5px;
+
     top: 0;
-    box-shadow: 10px 0px 10px #2c2c2c;
+    box-shadow: 0px 0px 30px #2c2c2c;
     z-index: 99;
+    border-radius: 50px;
 }
 
 .navbar>div{
@@ -32,7 +41,7 @@ body{
 }
 
 .logo{
-    color: #0084ff;
+    color: #ff00009c;
 }
 
 .logo span{
@@ -87,9 +96,10 @@ a{
     display: none;
 }
 
-header{
-    background-image: radial-gradient(#fff, #c7c7c7)
-}
+/*header{ 
+    background-image: radial-gradient(#fff, #c7c7c7) 
+} */
+
 .header-bottom-side{
     display: flex;
     align-items: center;
@@ -108,7 +118,7 @@ header{
 }
 
 .header-bottom-side-left button{
-    background-color: #0084ff;
+    background-color: #ff00009c;
     border: none;
     cursor: pointer;
     padding: 0.8rem 3.8rem;
@@ -120,7 +130,7 @@ header{
 }
 
 .header-bottom-side-left button:hover{
-    background-color: #004c94;
+    background-color: #ff00009c;
 }
 .header-bottom-side-left p{
     line-height: 1.5rem;
@@ -178,10 +188,13 @@ header{
 /* Main Contents -------------------------------------------------------------------------------------*/ 
 .gray-background{
     background-color: #2c2c2c;
+    margin: 0px 5px 0px 5px;
+    border-radius: 20px;
 }
 
 main{
     background-color: #ebebeb;
+    background-image: radial-gradient(#fff, #c7c7c7)
 }
 .page-inner-content{
     max-width: 1280px;
@@ -229,7 +242,7 @@ main{
 .subtitle-underline{
     width: 100px;
     height: 5px;
-    background: #0084ff;
+    background: #ff00009c;
     border-radius: 9999px;
     margin: 8px auto 0 auto;
 }
@@ -239,7 +252,12 @@ main{
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0px 15px 5px #afafaf;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 1rem;
 }
+
 
 .product-name{
     font-weight: 800;
@@ -247,7 +265,7 @@ main{
 }
 
 .rate{
-    color: #0084ff;
+    color: #ff00009c;
     font-size: 1.5rem;
 }
 
@@ -329,7 +347,7 @@ main{
 .testimonial p:first-child{ /*Busca primeiro elemento filho*/
     font-weight: bold; 
     font-size: 5rem;
-    color: #0084ff;
+    color: #ff00009c;
     margin-top: 3rem;
     line-height: 2rem;
 }
@@ -381,7 +399,7 @@ main{
     color: #fff;
 }
 .logo-footer span{
-    color: #0084ff;
+    color: #ff00009c;
 }
 
 .links-footer h3{
