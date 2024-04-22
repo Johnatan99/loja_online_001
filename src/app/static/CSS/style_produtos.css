@@ -6,22 +6,21 @@
 
 body{
     font-family: 'arial';
+    background-image: radial-gradient(#fff, #c7c7c7); /*Aqui*/
 }
+
 
 /*Barra superior --------------------------------------------------------------------------------------------- */
-.header-inner-content{
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .navbar{
     background-color: #2c2c2c;
     padding: 1rem;
     position: sticky;
     top: 0;
-    box-shadow: 10px 0px 1px #2c2c2c;
+    box-shadow: 0px 0px 30px #2c2c2c;
     z-index: 99;
+    border-radius: 50px; 
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .navbar>div{
@@ -32,7 +31,7 @@ body{
 }
 
 .logo{
-    color: #0084ff;
+    color: #ff00009c; 
 }
 
 .logo span{
@@ -71,6 +70,42 @@ a{
     height: 30px;
     cursor: pointer;
 }
+
+.nav-icon-container img:first-child{ /*Acessando o primeiro elemento*/
+    margin-right: 1rem;
+}
+
+/*Media Queries*/
+@media (max-width:800px){
+    .logo{
+        font-size: 1.5rem;
+    }
+
+    .menu-buttom{
+        display: block;
+    }
+
+    nav ul{
+        flex-direction: column; /* Direção de organização dos elementos*/
+    }
+
+    nav ul li{
+        text-align: center;
+        padding: 0.8rem;
+    }
+
+    nav{
+        position: absolute;
+        background-color: #2c2c2c;
+        width: 100%;
+        top: 46px;
+        display: none;
+    }
+    .show-menu nav{
+        display: block;
+    }
+}
+
 /* Barra superior ---------------------------------------------------------------------------------------------------*/
 
 /*Main --------------------------------------------------------------------------------------------------------------*/
