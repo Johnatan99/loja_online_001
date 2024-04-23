@@ -16,7 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.views import home, produtos, contato, conta, sobre
+from app.views import home, produtos, contato, conta, sobre, formulario
+
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -27,7 +28,10 @@ urlpatterns = [
     path('contato/', contato, name="contato"),
     path('conta/', conta, name="conta"),
     path('sobre/', sobre, name="sobre"),
+    path('formulario/', formulario, name="formulario"),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 #if settings.DEBUG:
  #       urlpatterns = urlpatterns + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

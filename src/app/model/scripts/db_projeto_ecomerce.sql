@@ -5,11 +5,11 @@ use db_projeto_ecomerce;
 
 create table produto(
 	id_produto int not null auto_increment,
-    nome_produto varchar(50),
+    nome_produto varchar(120),
     foto_produto blob,
     nota varchar(50),
     valor int,
-    categoria varchar(30),
+    categoria varchar(50),
     primary key(id_produto)
     );
     
