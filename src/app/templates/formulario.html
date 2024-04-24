@@ -7,8 +7,7 @@
         <title>Formulário</title> 
     </head>
     <body>
-        <form action="{% url 'home' %}" method="POST", anctype="multipart/form-data">
-            {% csrf_token %}
+        <form action="{% url 'formulario' %}" method="POST" anctype="multipart/form-data">{% csrf_token %}
             <input type="file" name="my_file"/>
             <input type="submit" value="enviar"/>
         </form>

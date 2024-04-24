@@ -9,7 +9,7 @@ create table produto(
     foto_produto blob,
     nota varchar(50),
     valor int,
-    categoria varchar(50),
+    categoria float,
     primary key(id_produto)
     );
     

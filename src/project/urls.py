@@ -29,6 +29,7 @@ urlpatterns = [
     path('conta/', conta, name="conta"),
     path('sobre/', sobre, name="sobre"),
     path('formulario/', formulario, name="formulario"),
+    
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
